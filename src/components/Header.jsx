@@ -12,7 +12,7 @@ const Header = () => {
     const refCollection = collection(db,"Users",User.email,Category.title)
     await getDocs(refCollection).then((querySnap) => { 
       querySnap.forEach((doc) => { 
-         deleteDoc(doc.ref).then(() => { alert('All Tasks are cleared') }).catch((err) => { alert(err.message) })
+         deleteDoc(doc.ref)
 
        })
      })

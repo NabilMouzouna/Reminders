@@ -18,7 +18,7 @@ const Aside = () => {
             <Button/>
         </div>
         <div className='text-center p-3'>
-          <button onClick={LogOut} className='bg-darkButtonColor text-red-500 p-2 rounded-lg w-full text-sm'>
+          <button onClick={LogOut} className='bg-darkButtonColor text-red-500 p-3 rounded-lg w-4/5 text-sm flex mx-auto justify-center items-center'>
             <span className='mx-3 hidden sm:block'>Logout</span>
             <FontAwesomeIcon icon={faRightFromBracket} />
           </button>
