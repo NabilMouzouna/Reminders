@@ -10,13 +10,13 @@ const Login = () => {
     const { setUser } = AuthContextConsumer()
     const navigate = useNavigate()
 
-
 //* Functions :
     const LoginWithGoogle = async () => { 
         await signInWithPopup(auth,googleAuthProvider).then(() => { alert('logged in') })
         .catch((error) => { alert(error.message) })
      }
      useEffect(() => { 
+        console.log(import.meta.env.firebase_Config)
         const unsub = auth.onAuthStateChanged(
             (user) => { 
                 if(user){
