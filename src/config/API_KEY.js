@@ -1,0 +1,2 @@
+const FIREBASE_API_KEY= "AIzaSyBNTQH9dxriUIkWnvsMvTWanUwQ6lWoekQ"
+export default FIREBASE_API_KEY
