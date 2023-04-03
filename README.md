@@ -1,5 +1,5 @@
 # Reminders
-is A task Manager App clone of Apple's Reminders.
+is A task Manager App clone of Apple's Reminders built with ReactJs tailwindCSS and Firebase.
 Reminders V1.0 enable you to manage your tasks (create, delate and update ) safely.
 
 # How to Use :
