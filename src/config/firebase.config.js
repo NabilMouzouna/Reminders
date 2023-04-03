@@ -5,7 +5,7 @@ import { getFirestore } from "firebase/firestore";
 import FIREBASE_API_KEY from './API_KEY'
 // Initialize Firebase
 const app = initializeApp({
-  apiKey: FIREBASE_API_KEY,
+  apiKey: "AIzaSyBNTQH9dxriUIkWnvsMvTWanUwQ6lWoekQ",
   authDomain: "apple-reminders-7e307.firebaseapp.com",
   projectId: "apple-reminders-7e307",
   storageBucket: "apple-reminders-7e307.appspot.com",
