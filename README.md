@@ -13,5 +13,5 @@ Reminders V1.0 enable you to manage your tasks (create, delate and update ) safe
 <i>✔ completed tasks will be stored directly under the "Completed" category</i>
 <i>✔ by clicking Clear all you can delete all tasks inside your current category</i>
 
-❌ <h4 style="background-color:red;">my personal configuration for firebase are included inside the project, so please donnot use it. feel free to clone the project and use your own</h4">
+❌ <h4 style="background-color:red;">my personal configuration for firebase are included inside the project, so please donnot use it. feel free to clone the project and use your own</h4>
 
