@@ -9,4 +9,9 @@ Reminders V1.0 enable you to manage your tasks (create, delate and update ) safe
 4. write your task then click on the body again to save it
 5. to modify (update) task simply edit the task and click on body
 
-completed tasks will be stored directly under the "Completed" category
+
+<i>✔ completed tasks will be stored directly under the "Completed" category</i>
+<i>✔ by clicking Clear all you can delete all tasks inside your current category</i>
+
+❌ my personal configuration for firebase are included inside the project, so please donnot use it. feel free to clone the project and use your own
+
