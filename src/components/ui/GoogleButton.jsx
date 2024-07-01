@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { faGoogle } from "@fortawesome/free-brands-svg-icons"
-import {auth,googleAuthProvider} from '../config/firebase.config'
+import {auth,googleAuthProvider} from '../../config/firebase.config'
 import { signInWithPopup } from "firebase/auth"
 import { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
-import {AuthContextConsumer} from '../context/AuthContext'
-const Login = () => {
+import {AuthContextConsumer} from '../../context/AuthContext'
+
+const GoogleButton = () => {
 //* VARIABLES:
     const { setUser } = AuthContextConsumer()
     const navigate = useNavigate()
@@ -20,6 +22,7 @@ const Login = () => {
         const unsub = auth.onAuthStateChanged(
             (user) => { 
                 if(user){
+                    console.log(user)
                     navigate('/home')
                     setUser(user)
                 }
@@ -28,9 +31,6 @@ const Login = () => {
         return () => { unsub() }
       },[])
   return (
-    <div className=" min-h-screen text-center mt-[15%]">
-        <h1 className="text-4xl py-1 ">Welcome to Apple Reminders clone</h1>
-        <h3 className="py-1">please sign in first</h3>
         <button 
         onClick={
             (e) => { 
@@ -38,12 +38,11 @@ const Login = () => {
                 LoginWithGoogle()
              }
         }
-        className="py-3 px-4 bg-gray-200 rounded-lg mt-8 active:bg-gray-300">
+        className="py-3 px-4 bg-gray-200 rounded-lg active:bg-gray-300">
             <FontAwesomeIcon icon={faGoogle} className="text-blue-500"></FontAwesomeIcon>
             <span className="mx-3 ">Login with google</span>
         </button>
-    </div>
   )
 }
 
-export default Login
+export default GoogleButton

@@ -1,6 +1,6 @@
 
-import Aside from "../components/Aside"
-import Body from "../components/Body"
+import Aside from "./ui/Aside"
+import Body from "./ui/Body"
 import { CategoryContextProvider } from "../context/CategoryContext"
 const Home = () => {
   return (

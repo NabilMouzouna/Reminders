@@ -1,9 +1,9 @@
 import { useState ,useEffect} from "react"
-import TaskContextConsumer from "../context/AddTaskContext"
-import {db} from '../config/firebase.config'
+import TaskContextConsumer from "../../context/AddTaskContext"
+import {db} from '../../config/firebase.config'
 
-import {AuthContextConsumer}  from '../context/AuthContext'
-import CategoryContextConsumer from "../context/CategoryContext"
+import {AuthContextConsumer}  from '../../context/AuthContext'
+import CategoryContextConsumer from "../../context/CategoryContext"
 import { addDoc,collection } from "firebase/firestore"
 import TasksDisplay from "./Tasks.display"
 

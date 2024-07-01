@@ -2,7 +2,7 @@ import React from 'react'
 import Button from './Button'
 import { signOut } from "firebase/auth"
 import { useNavigate } from "react-router-dom"
-import { auth } from "../config/firebase.config"
+import { auth } from "../../config/firebase.config"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightFromBracket } from '@fortawesome/free-solid-svg-icons'
 const Aside = () => {

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCalendarWeek,faCalendarCheck,faHardDrive,faFlag,faCircleCheck } from "@fortawesome/free-solid-svg-icons"
-import CategoryContextConsumer from '../context/CategoryContext'
+import CategoryContextConsumer from '../../context/CategoryContext'
 import { useState } from 'react'
 
 const Buttons = [

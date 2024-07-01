@@ -1,8 +1,8 @@
-import CategoryContextConsumer from "../context/CategoryContext"
-import TaskContextConsumer from '../context/AddTaskContext'
-import { db } from "../config/firebase.config"
+import CategoryContextConsumer from "../../context/CategoryContext"
+import TaskContextConsumer from '../../context/AddTaskContext'
+import { db } from "../../config/firebase.config"
 import { collection, deleteDoc,getDocs } from "firebase/firestore"
-import { AuthContextConsumer } from "../context/AuthContext"
+import { AuthContextConsumer } from "../../context/AuthContext"
 const Header = () => {
   const {Category} = CategoryContextConsumer()
   const {setAddTask} = TaskContextConsumer()

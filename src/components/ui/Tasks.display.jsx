@@ -1,8 +1,8 @@
-import CategoryContextConsumer from '../context/CategoryContext'
+import CategoryContextConsumer from '../../context/CategoryContext'
 import { collection, getDocs,addDoc,deleteDoc, doc, updateDoc } from 'firebase/firestore'
 import React from 'react'
 import { useState,useEffect } from 'react'
-import { db } from '../config/firebase.config'
+import { db } from '../../config/firebase.config'
 
 const TasksDisplay = ({id,clicked}) => {
 
